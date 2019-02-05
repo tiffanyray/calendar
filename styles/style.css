@@ -6,6 +6,10 @@ body {
   width: 100vw;
 }
 
+.mobile-day {
+  display: none;
+}
+
 header {
   margin: 20px;
   padding: 10px;
@@ -133,6 +137,11 @@ header {
     display: none;
   }
 
+  .mobile-day {
+    display: inline-block;
+    padding: 5px 0 10px 10px;
+  }
+
   #calendar li {
     height: auto;
     border: 1px solid #ededed;
@@ -142,7 +151,7 @@ header {
   }
 
   .date {
-    float: none;
+    float: left;
   }
 }
 

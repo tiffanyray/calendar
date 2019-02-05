@@ -8,6 +8,10 @@ body
 #calendar, #calendar-wrapper 
     width: 100vw
 
+//Removing mobile day
+.mobile-day
+    display: none
+
 
 // Header
 header 
@@ -89,6 +93,11 @@ header
 @media only screen and (max-width: 768px) 
     #calendar .weekdays, #calendar .other-month
         display: none
+    
+    .mobile-day
+        display: inline-block
+        padding: 5px 0 10px 10px
+        
 
     #calendar li 
         height: auto
@@ -98,4 +107,4 @@ header
         margin-bottom: -1px
 
     .date 
-        float: none
+        float: left
